@@ -1,0 +1,387 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    background-color: #8CC461;
+}
+.wrapper
+{
+    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scoreboard
+{
+    width: 800px;
+    height: 158px;
+    border: 2px solid white;
+    border-radius: 13px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title
+{
+    margin-left: 30px;
+    font-size: 40px;
+    color: #FFF;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4px;
+}
+.score-comp ,.score-mine
+{
+    width: 129px;
+    height: 128px;
+    border: 2px solid white;
+    text-align: center;
+    background-color: white;
+    border-radius: 9px;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+    font-size: 17px;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #656565;
+    
+}
+.score-comp
+{
+    margin-left: 200px;
+}
+.score-mine
+{
+    margin-right: 20px;
+}
+h1
+{
+  color: #252525;
+  text-align: center;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.hands {
+    background-image: url("./image/bg-triangle.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    width: 476px;
+    height: 430px;
+    margin-top: 100px;
+    display: flex;
+    z-index: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hands img {
+    
+    display: block;
+  }
+  
+  .hands .paper {
+    margin-right: 20px;
+    
+  }
+  
+  .hands .scissor {
+    margin-left: 20px;
+  }
+  
+  .hands .hand {
+    cursor: pointer;
+    transition: all 0.25s;
+  }
+  
+  .hands .hand:hover {
+    transform: translate3d(0px, -8px, 0px);
+  }
+
+
+.button-container {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.next-btn {
+    margin-left: 10px; 
+    
+}
+
+
+
+
+.modal
+{
+    position: absolute;
+    height:300px;
+    width: 278px;
+    bottom: 6rem;
+    right: 2rem;
+    border-radius: 13px;
+    border: 7px solid #FFF;
+    background: #004429;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0;
+    
+}
+
+.show-modal
+{
+    opacity: 1;
+    pointer-events: initial;
+}
+.rules-btn
+{
+    width: 119px;
+    height: 40px;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background: none;
+    border: 2px solid white;
+    outline: none;
+    font-size: 21px;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    cursor: pointer;
+    color: #FFF;
+    font-family: inherit; 
+    
+    
+}
+#next-btn
+{
+    width: 119px;
+    height: 40px;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background: none;
+    border: 2px solid white;
+    outline: none;
+    font-size: 21px;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    cursor: pointer;
+    color: #FFF;
+    margin-right: 150px;
+    
+    
+    
+}
+.close-btn
+{
+    width: 50px;
+    height: 50px;
+    background: none;
+    background-color: red;   
+    border-radius: 50%;
+    border: 5px solid white;
+    font-size:25px;
+    cursor: pointer;
+    color: #FFF;
+    position: absolute;
+    left: 80%;
+    transform: translate(50%, -100% );
+}
+.modal-heading
+{
+    position: relative;
+    top: 10px;
+    text-align: center;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.modal-container ul li{
+    position: relative;
+    left:10%;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+ul {
+    list-style-type: square;
+
+}
+ul::marker
+{
+    color:yellow;
+}
+
+
+
+.choice-btn[data-choice="rock"]
+{
+    
+    grid-area: rock;
+}
+.choice-btn[data-choice="scissor"]
+{
+    grid-area: scissor;
+}
+.choice-btn[data-choice="paper"]
+{
+    grid-area: paper;
+}
+.contest
+{
+    width: 1000px;
+    display: none;
+    margin-top: 50px;
+   
+}
+.contest img
+{
+    margin-left: 75px;
+    cursor: pointer;
+}
+
+.contest > div
+{
+    flex: 1;
+}
+
+.contest h1
+{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+   font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.7px;
+}
+
+.contest .handImagecontainer
+{
+    display: flex;
+    justify-content: center;
+}
+.referee
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.referee h1
+{
+    color: #FFF;
+    font-size: 39px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 3.9px;
+    margin-bottom: 0px;
+}
+.referee h2
+{
+color: #FFF;
+text-align: center;
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+letter-spacing: 2.5px;
+margin-bottom : 20px;
+}
+.newGame
+{
+    background-color: #FFF;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #6B6B6B;
+   
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 1.5px
+}
+
+.newGame:hover
+{
+    background-color: bisque;
+    transform: translate3d(0px,-2px,0px);
+    transition: all 0.15s;
+}
+
+
+@media (max-width: 768px) {
+    
+    .wrapper {
+        padding: 10px;
+    }
+
+    .scoreboard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .score-comp,
+    .score-mine {
+        margin-top: 10px;
+    }
+
+    .hands {
+        flex-direction: column;
+    }
+
+    .hand {
+        margin: 10px 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+    
+}

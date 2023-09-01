@@ -1,0 +1,194 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #89C15E;
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.img img
+{
+    width: 900px;
+    height:600px;
+}
+.hurry
+{
+    text-align: center;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 9.1px;
+    margin-left: 45px;  
+    margin-bottom: 10px;
+    
+}
+.thank
+{
+    text-align: center;
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 4.1px;
+}
+
+
+.new-game-btn{
+    
+    width: 174px;
+    height: 40px;
+    flex-shrink: 0;
+    background: none;
+    border: 2px solid white;
+    outline: none;
+    font-size: 15px;
+    border-radius: 7px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    cursor: pointer;
+    color: #6B6B6B;
+    font-family: inherit; 
+    margin-left: 360px;
+    background-color: #FFF;
+    margin-top: 80px;
+    
+
+}
+.new-game-btn:hover{
+   
+
+    background-color: bisque;
+    transform: translate3d(0px,-2px,0px);
+    transition: all 0.15s;
+
+}
+
+.modal
+{
+    position: absolute;
+    height:300px;
+    width: 278px;
+    bottom: 6rem;
+    right: 2rem;
+    border-radius: 13px;
+    border: 7px solid #FFF;
+    background: #004429;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0;
+    
+}
+
+.show-modal
+{
+    opacity: 1;
+    pointer-events: initial;
+}
+.rules-btn
+{
+    width: 119px;
+    height: 40px;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background: none;
+    border: 2px solid white;
+    outline: none;
+    font-size: 21px;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    cursor: pointer;
+    color: #FFF;
+    font-family: inherit; 
+    
+}
+#next-btn
+{
+    width: 119px;
+    height: 40px;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background: none;
+    border: 2px solid white;
+    outline: none;
+    font-size: 21px;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    cursor: pointer;
+    color: #FFF;
+    font-family: inherit; 
+    margin-right: 150px;
+    
+}
+.close-btn
+{
+    width: 50px;
+    height: 50px;
+    background: none;
+    background-color: red;   
+    border-radius: 50%;
+    border: 5px solid white;
+    font-size:25px;
+    cursor: pointer;
+    color: #FFF;
+    position: absolute;
+    left: 80%;
+    transform: translate(50%, -100% );
+}
+.modal-heading
+{
+    position: relative;
+    top: 10px;
+    text-align: center;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.modal-container ul li{
+    position: relative;
+    left:10%;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+ul {
+    list-style-type: square;
+
+}
+ul::marker
+{
+    color:yellow;
+}
